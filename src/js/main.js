@@ -22,7 +22,8 @@ var routers = new VueRouter({
     ]
 
 })
- 
+ //再试一下项目~~~
+ //这个没用吗
 
 var vm = new Vue({
     el: '#app',
