@@ -22,6 +22,7 @@ var routers = new VueRouter({
     ]
 
 })
+ 
 
 var vm = new Vue({
     el: '#app',
