@@ -1,6 +1,14 @@
-h1{
-    color:red;
+h1 {
+    color: red;
 }
-h2{
-    color:yellow;
+
+h2 {
+    color: yellow;
+}
+
+.gif_1 {
+    width: 200px;
+    height: 150px;
+    background: url(../images/p.gif);
+    background-size: cover;
 }

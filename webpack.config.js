@@ -31,7 +31,8 @@ const config = {
         rules: [
             { test: /\.css$/, use: ['style-loader', 'css-loader'] },
             { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
-            { test: /.vue$/, use: 'vue-loader' }
+            { test: /.vue$/, use: 'vue-loader' },
+            {test:/\.(png|svg|jpg|gif)$/,use:'file-loader'}
         ]
     }
 }

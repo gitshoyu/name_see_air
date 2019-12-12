@@ -4,31 +4,30 @@ import Vue from "vue"
 import VueRouter from "vue-router"
 import app from "./app.vue"
 import bar from "./bar.vue"
+import foo from "./foo.vue"
 
 Vue.use(VueRouter)
-var foo = {
-    template: '<div>这是组件1foo</div>'
 
-}
+
 console.log(bar)
 
 var routers = new VueRouter({
-    routes: [
-        {
-            path: "/foo", component: bar
+        routes: [{
+            path: "/foo",
+            component: foo
         }, {
-            path: "/bar", component: bar
-        }
-    ]
+            path: "/bar",
+            component: bar
+        }]
 
-})
- //再试一下项目~~~
- //这个没用吗
+    })
+    //再试一下项目~~~
+    //这个没用吗
 
 var vm = new Vue({
     el: '#app',
-    data:{
-        value:"yaoyao"
+    data: {
+        value: "yaoyao"
     },
     render: c => c(app),
     router: routers
