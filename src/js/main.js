@@ -5,7 +5,6 @@ import VueRouter from "vue-router"
 import app from "../.vue/app.vue"
 import bar from "../.vue/bar.vue"
 import foo from "../.vue/foo.vue"
-import $ from "jquery"
 
 //1. 
 Vue.use(VueRouter)
