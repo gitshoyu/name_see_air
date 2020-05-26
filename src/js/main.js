@@ -7,30 +7,22 @@ import bar from "../.vue/bar.vue"
 import foo from "../.vue/foo.vue"
 import $ from "jquery"
 
-const os = require('os')
-var men = os.freemem() / os.totalmem() * 100
-console.log(`内存占用率为${men}%`)
+//1. 
 Vue.use(VueRouter)
 
-var routers = new VueRouter({
-        routes: [{
-            path: "/foo",
-            component: foo
-        }, {
-            path: "/bar",
-            component: bar
-        }]
+//2 路由定义
+let routes = [
+    { path: "/foo", component: foo },
+    { path: "/bar", component: bar }
+]
 
-    })
-    //再试一下项目~~~
-    //这个没用吗
+var routers = new VueRouter({ routes })
 
+//3 挂载
 var vm = new Vue({
-    el: '#app',
-    data: {
-        value: "yaoyao"
-    },
+
     render: c => c(app),
+
     router: routers
-})
-console.log("<p>hhheee </p>")
+
+}).$mount('#app')
